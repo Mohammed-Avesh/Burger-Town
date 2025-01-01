@@ -570,20 +570,12 @@ video {
   top: 0.75rem;
 }
 
-.m-auto {
-  margin: auto;
-}
-
-.-m-2 {
-  margin: -0.5rem;
-}
-
 .-m-3 {
   margin: -0.75rem;
 }
 
-.-m-8 {
-  margin: -2rem;
+.m-auto {
+  margin: auto;
 }
 
 .mx-1 {
@@ -617,6 +609,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -625,8 +621,16 @@ video {
   margin-top: 5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-5 {
@@ -639,30 +643,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .flex {
@@ -693,24 +673,16 @@ video {
   height: 1.75rem;
 }
 
+.h-\[650px\] {
+  height: 650px;
+}
+
 .h-\[844px\] {
   height: 844px;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[650px\] {
-  height: 650px;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[300px\] {
-  height: 300px;
 }
 
 .w-1\/2 {
@@ -737,40 +709,12 @@ video {
   width: 1.75rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-2\/4 {
-  width: 50%;
-}
-
-.w-\[756px\] {
-  width: 756px;
-}
-
 .w-\[900px\] {
   width: 900px;
 }
 
-.w-\[1152px\] {
-  width: 1152px;
-}
-
-.w-\[600px\] {
-  width: 600px;
-}
-
-.w-\[800px\] {
-  width: 800px;
-}
-
-.w-\[850px\] {
-  width: 850px;
-}
-
-.w-\[950px\] {
-  width: 950px;
+.w-full {
+  width: 100%;
 }
 
 .max-w-6xl {
@@ -813,14 +757,6 @@ video {
   gap: 3rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -833,16 +769,13 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .border {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
+.bg-\[\#ffa323\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 163 35 / var(--tw-bg-opacity, 1));
 }
 
 .bg-black {
@@ -865,25 +798,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
-}
-
-.bg-orange-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 186 116 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#ffa323\;\] {
-  background-color: #ffa323;;
-}
-
-.bg-\[\#ffa323\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 163 35 / var(--tw-bg-opacity, 1));
-}
-
 .bg-opacity-35 {
   --tw-bg-opacity: 0.35;
 }
@@ -904,41 +818,26 @@ video {
   background-size: cover;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-12 {
-  padding: 3rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .p-3 {
   padding: 0.75rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-4 {
   padding: 1rem;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-2 {
@@ -974,26 +873,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pt-6 {
@@ -1107,16 +986,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.placeholder\:text-gray-600::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
-}
-
-.placeholder\:text-gray-600::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
-}
-
 .placeholder\:text-gray-500::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
@@ -1161,6 +1030,10 @@ video {
     height: 710px;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:w-3\/4 {
     width: 75%;
   }
@@ -1171,10 +1044,6 @@ video {
 
   .md\:w-\[31\%\] {
     width: 31%;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
   }
 
   .md\:flex-row {
