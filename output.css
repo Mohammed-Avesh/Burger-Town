@@ -940,6 +940,10 @@ video {
   background-image: url('image/navbar-img/bg-img.png');
 }
 
+.bg-\[url\(\'https\:\/\/pluspng\.com\/img-png\/restaurant-png-hd--1920\.png\'\)\] {
+  background-image: url('https://pluspng.com/img-png/restaurant-png-hd--1920.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1318,5 +1322,17 @@ video {
 
   .md\:font-normal {
     font-weight: 400;
+  }
+
+  .md\:font-thin {
+    font-weight: 100;
+  }
+
+  .md\:font-extralight {
+    font-weight: 200;
+  }
+
+  .md\:font-light {
+    font-weight: 300;
   }
 }
