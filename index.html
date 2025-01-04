@@ -29,8 +29,9 @@
 </head>
 
 <body>
-   <div class="md:h-[710px] h-[844px] bg-cover bg-[url('https://pluspng.com/img-png/restaurant-png-hd--1920.png')]">
-      <div class="bg-black hidden md:block  bg-opacity-35 cursor-pointer">
+   <div class="md:h-[710px] z-0 h-[844px] relative bg-cover bg-[url('https://pluspng.com/img-png/restaurant-png-hd--1920.png')]">
+      <div class="absolute top-0 right-0 left-0 bottom-0 bg-black opacity-50 -z-10"></div>
+      <div class=" bg-black hidden md:block  bg-opacity-35 cursor-pointer">
          <div class="max-w-6xl flex py-2 text-white m-auto" style="color: rgba(255, 255, 255, 0.5);">
             <div class="w-1/3 flex items-center">
                <img class="w-7 h-7" src="./icon/phone.svg" alt="">
@@ -65,11 +66,11 @@
       </div>
       <!-- Texting -->
       <div class="md:mt-52 mt-0 h-full md:h-0 flex">
-         <div class="max-w-6xl m-auto text-white text-center">
+         <div class="max-w-6xl z-0 m-auto text-white text-center">
             <div class="">
-               <p class="text-8xl" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><span class="text-orange-500">B</span>URGE<span class="text-blue-700">R</span></p>
+               <p class="text-8xl z-[-1]" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><span class="text-orange-500">B</span>URGE<span class="text-blue-700">R</span></p>
                <br>
-               <p class="text-8xl">Town</p>
+               <p class="text-8xl"><span class="text-gray-500">T</span>ow<span class="text-yellow-500">n</span></p>
                <div class="mt-5">
                   <button class="px-3 py-3 font-medium bg-orange-400">Order Now</button>
                   <button class="px-3 py-3 font-medium bg-black bg-opacity-45" style="border: 1px solid white;">View
