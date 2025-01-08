@@ -26,6 +26,41 @@
       .MobileMenuSlider{
          overflow-x: hidden;
       }
+      .sidepanel {
+            height: 0px;
+            /* Specify a height */
+            width: 100%;
+            /* 0 width - change this with JavaScript */
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            background-color: #111;
+            /* Black*/
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            /* Place content 60px from the top */
+            transition: height 0.5s;
+            /* 0.5 second transition effect to slide in the sidepanel */
+        }
+      .sidepanel a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            border-bottom: 1px solid #818181;
+        }
+      .sidepanel a:hover {
+            color: #f1f1f1;
+        }
+      .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
    </style>
 </head>
 
@@ -48,22 +83,43 @@
          </div>
       </div>
       <!-- Navbar -->
-      <div class="hidden md:block">
-         <div class="max-w-6xl  mt-7 text-white flex m-auto justify-around">
-            <div class="w-1/2 flex items-center text-2xl font-bold">
+      <div class="">
+         <div class="max-w-6xl text-white flex m-auto justify-around">
+            <div class="w-1/4 hidden   md:flex items-center text-2xl font-bold">
                <p class="cursor-pointer">Appetizer</p>
             </div>
-            <div class="w-1/2 flex justify-around">
-               <ul class="flex cursor-pointer items-center gap-10 font-medium">
-                  <li class="hover:text-orange-400">Home</li>
-                  <li class="hover:text-orange-400">About</li>
-                  <li class="hover:text-orange-400">Menu</li>
-                  <li class="hover:text-orange-400">Blog</li>
-                  <li class="hover:text-orange-400">Contact</li>
-               </ul>
-               <button class="px-3 py-3 font-semibold bg-orange-400 rounded-lg">Book a table</button>
+            <div class="hidden md:block">
+               <div class="w-3/4  flex justify-around">
+                  <ul class="flex  cursor-pointer items-center gap-10 font-medium">
+                     <li class="hover:text-orange-400"><a href="#home">Home</a></li>
+                     <li class="hover:text-orange-400"><a href="#Appetizer">Appetizer</a></li>
+                     <li class="hover:text-orange-400"><a href="#services">Services</a></li>
+                     <li class="hover:text-orange-400 whitespace-nowrap"><a href="#our_menu"></a>Our Menu</li>
+                     <li class="hover:text-orange-400"><a href="#reservation">Reservation</a></li>
+                     <li class="hover:text-orange-400"><a href="#founder">Founder</a></li>
+                     <li class="hover:text-orange-400 whitespace-nowrap"><a href="#happy_customer">Happy Customer</a></li>
+                     <li class="hover:text-orange-400"><a href="#footer">Footer</a></li>
+                  </ul>
+                  <button class="px-3 mx-5 py-3 font-semibold whitespace-nowrap bg-orange-400 rounded-lg">Book a table</button>
+               </div>
             </div>
          </div>
+         <div class="md:hidden text-end block bg-[#111]">
+           <div class="flex justify-between items-center">
+            <p class="cursor-pointer text-xl px-2 font-medium text-white">Appetizer</p>
+            <button class="openbtn" style="color: rgba(255, 255, 255, .5);" onclick="openNav()">&#9776; MENU</button>
+           </div>
+            <div id="mySidepanel" style="text-align: start;" class="sidepanel">
+                <a href="#home">Home</a>
+                <a href="#Appetizer">Appetizer</a>
+                <a href="#services">Services</a>
+                <a href="#our_menu">Our Menu</a>
+                <a href="#reservation">Reservation</a>
+                <a href="#founder">Founder</a>
+                <a href="#happy_customer">Happy Customer</a>
+                <a href="#footer">Footer</a>
+            </div>
+        </div>
       </div>
       <!-- Texting -->
       <div class="md:mt-52 mt-0 h-full md:h-0 flex">
@@ -82,7 +138,7 @@
       </div>
    </div>
    <!-- About -->
-   <div>
+   <div id="Appetizer">
       <div class="max-w-6xl flex justify-center mt-20 m-auto text-center">
          <div class="md:w-3/4 text-center">
             <h1 class="md:text-3xl text-3xl font-bold">APPETIZER BURGER-TOWN</h1>
@@ -119,7 +175,7 @@
       </div>
    </div>
    <!-- Services -->
-   <div>
+   <div id="services">
       <div class="max-w-6xl flex  justify-center mt-20 m-auto text-center">
          <div class="md:w-3/4 w-full text-center">
             <h1 class="md:text-3xl text-6xl font-bold">Catering Services</h1>
@@ -165,7 +221,7 @@
       </div>
    </div>
    <!-- Our Menue -->
-   <div class="mt-20 hidden md:block">
+   <div id="our_menu" class="mt-20 hidden md:block">
       <p class="text-center font-bold text-4xl">Our Menu</p>
       <h1 class="text-center font-medium  text-4xl mt-7">BURGER-VERITY</h1>
       <div class="MenuSlider flex max-w-7xl mt-10  m-auto ">
@@ -1232,7 +1288,7 @@
       </div>
    </div>
    <!-- Make Reservation -->
-   <div class="max-w-9xl flex flex-col md:flex-row  mt-24">
+   <div id="reservation" class="max-w-9xl flex flex-col md:flex-row  mt-24">
       <div class="md:w-1/2 w-full md:p-12 p-4">
          <h1 class="md:text-6xl text-4xl w-full ">Make Reservation</h1>
          <div class="flex mt-14 flex-wrap -m-3">
@@ -1285,7 +1341,7 @@
       </div>
    </div>
    <!-- Our Master Chef -->
-   <div class="mt-28">
+   <div id="founder" class="mt-28">
       <h1 class="text-center text-5xl">Founder Of Burger-Town</h1>
       <div class="max-w-6xl flex justify-center flex-col md:flex-row m-auto">
          <div class="md:w-1/3 w-full mt-10">
@@ -1314,7 +1370,7 @@ er
       </div>
    </div>
    <!-- Happy customer -->
-   <div class="md:block hidden mt-20 relative z-0 bg-origin-border bg-center  bg-no-repeat bg-cover bg-[url('image/customer/background-img.png')]">
+   <div id="happy_customer" class="md:block hidden mt-20 relative z-0 bg-origin-border bg-center  bg-no-repeat bg-cover bg-[url('image/customer/background-img.png')]">
       <div class="absolute z-[-1] top-0 left-0 right-0 bottom-0 opacity-[0.8] bg-white"></div>
       <h1 class="text-center pt-36 text-6xl">Happy Customer</h1>
       <div class="MenuSlider max-w-6xl flex  m-auto mt-28">
@@ -1489,7 +1545,7 @@ er
       </div>
     </div>
     <!-- Footer -->
-     <div class="max-w-9xl flex flex-col md:flex-row gap-8 md:p-20 px-4 bg-[#141313] text-white pt-20">
+     <div id="footer" class="max-w-9xl flex flex-col md:flex-row gap-8 md:p-20 px-4 bg-[#141313] text-white pt-20">
       <div class="md:w-1/4 w-full">
          <h1 class="text-2xl md:text-xl">Appetizer</h1>
          <p class="mt-10 font-medium" style="color: rgba(255, 255, 255, 0.7);;">Welcome to Burger-Town, your ultimate destination for mouth-watering, spicy chicken delicacies that will tantalize your taste buds! At our fast food haven, we specialize in serving a variety of chicken-based recipes, including juicy burgers, scrumptious sandwiches,🍔🍕🥪</p>
@@ -1570,6 +1626,21 @@ er
             autoplaySpeed: 2000,
          });
       });
+      function openNav() {
+        const myPanel = document.getElementById("mySidepanel");
+        if (myPanel.style.height === "0px") {
+            myPanel.style.height = "440px";
+        } else {
+            myPanel.style.height = "0px";
+        }
+    }
+    const myPanel = document.querySelectorAll(".sidepanel a");
+    myPanel.forEach((item) => {
+        item.addEventListener("click", () => {
+            document.getElementById("mySidepanel").style.height = "0px";
+        });
+    });
+
    </script>
 </body>
 
